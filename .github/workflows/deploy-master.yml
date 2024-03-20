@@ -8,8 +8,8 @@ on:
 jobs:
   call-reusable-workflow:
     uses: ./.github/workflows/reusable-workflow.yml
-    with:
-      stage: prod
+    # with:
+    #   stage: prod
     secrets:
       AWS_ACCESS_KEY_ID: ${{ secrets.PROD_AWS_ACCESS_KEY_ID }}
       AWS_SECRET_ACCESS_KEY: ${{ secrets.PROD_AWS_SECRET_ACCESS_KEY }}
