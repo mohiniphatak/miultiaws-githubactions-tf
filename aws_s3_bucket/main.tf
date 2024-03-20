@@ -1,11 +1,12 @@
-terraform {
-  required_providers {
-    aws = {
-      source = "hashicorp/aws"
-    }
-  }
+provider "aws" {
+    region = "us-east-1"
+  
 }
 
+# resource "aws_s3_bucket" "statefilebucket" {
+#     bucket = "my-statefile-bucket"
+  
+# }
 resource "aws_s3_bucket" "srecoursebuf-s3" {
   bucket = "terraformgithubactions-yeeeelllll"
 #   versioning {
