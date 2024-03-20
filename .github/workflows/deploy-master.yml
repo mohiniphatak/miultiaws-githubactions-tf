@@ -28,7 +28,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       # environmentdev: dev
-      environment: prod
+      environment: dev
 
 
     steps:
