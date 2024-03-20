@@ -39,8 +39,8 @@ jobs:
     - name: Terraform Workflow
       working-directory: aws_s3_bucket
       run: "terraform init        \nterraform plan\nterraform terraform apply -auto-approve\n"
-      with:
-        args: deploy --stage ${{ inputs.stage }}
+      # with:
+      #   args: deploy --stage ${{ inputs.stage }}
       env:
         AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
         AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
